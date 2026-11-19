@@ -1,0 +1,31 @@
+version: 1
+project:
+  id: modelflow-makro
+  title: MAKRO in ModelFlow
+  authors:
+    - name: Ib Hansen
+  description: >-
+    DREAM's Danish macro model MAKRO (release 2026-September) translated to ModelFlow and
+    solved over the whole horizon 2030-2129 in one stacked Newton.
+  bibliography:
+    - references.bib
+  exports:
+    - format: pdf
+      template: latex/mfbook-template
+      output: exports/pdf/makro.pdf
+      articles: &chapters
+        - intro.md
+        - makro26_experiment_simple.ipynb
+    - format: tex
+      template: latex/mfbook-template
+      output: exports/tex/makro.tex
+      articles: *chapters
+  toc:
+    - file: intro.md
+      title: Introduction
+    - file: makro26_experiment_simple.ipynb
+      title: A simple experiment
+site:
+  template: book-theme
+  options:
+    logo_text: MAKRO in ModelFlow
