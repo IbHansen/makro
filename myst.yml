@@ -16,6 +16,10 @@ project:
       articles: &chapters
         - intro.md
         - makro26_experiment_simple.ipynb
+        - makro26_all_shocks.ipynb
+        - makro26_shocks_report.ipynb
+        - makro26_io_viz.ipynb
+        - makro26_io_shock.ipynb
     - format: tex
       template: latex/mfbook-template
       output: exports/tex/makro.tex
@@ -25,6 +29,18 @@ project:
       title: Introduction
     - file: makro26_experiment_simple.ipynb
       title: A simple experiment
+    - title: DREAM's standard shocks
+      children:
+        - file: makro26_all_shocks.ipynb
+          title: All standard shocks
+        - file: makro26_shocks_report.ipynb
+          title: Report on the shocks
+    - title: The input-output system
+      children:
+        - file: makro26_io_viz.ipynb
+          title: The baseline
+        - file: makro26_io_shock.ipynb
+          title: A shock
 site:
   template: book-theme
   options:

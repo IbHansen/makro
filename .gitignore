@@ -22,6 +22,8 @@
 !*.jpeg
 !*.gif
 !*.webp
+# films the pages show (figures with an .mp4, as in makro's intro.md)
+!*.mp4
 # ModelFlow's drawings in a graph\ folder, also as .svg (other .svg files, like the
 # diagram sources of general, stay local)
 !**/graph/**/*.svg
